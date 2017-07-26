@@ -1,0 +1,130 @@
+body {
+    background-color: black;
+}
+
+#main {
+    width: 80%;
+    height: ;
+    border: 5px solid #dbdde0;
+    border-radius: 10px;
+    background-color: white;
+    margin: auto;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-weight: 900;
+    text-align: center;
+    color: #202123;
+}
+
+p {
+   font-family: sans-serif;
+   text-align: center;
+   color: #202123;
+}
+
+#text {
+    width: 60%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.link {
+    width: 10em;
+    max-width: 10em;
+    padding: 5px;
+    text-align: center;
+    background-image: linear-gradient(white 0%, silver 100%);
+    border: 3px outset Gray;
+    border-radius: 5px;
+    font-family: sans-serif;
+    margin: auto;
+    color: black;
+}
+
+.link:link, .link:visited, .link:hover {
+    background-image: linear-gradient(white 0%, silver 100%);
+    border: 3px outset Gray;
+    color: black;
+}
+
+.link:active {
+    border: 3px inset Gray;
+    background-image: linear-gradient(silver 0%, white 100%);
+    color: black;
+}
+
+#form {
+    width: 80%;
+    margin: auto;
+    border: 4px outset silver;
+    background-color: #e5e6e8;
+}
+
+h3 {
+    text-align: center;
+    font-family: sans-serif;
+    color: #202123;
+}
+
+.input{
+    margin-left: 5%;
+    width: 85%;
+    padding: 5px;
+    border: inset;
+}
+
+#formtext {
+    text-align: left;
+    margin-left: 5%;
+}
+
+#submit, #reset {
+    width: 40%;
+    display: inline-block;
+    padding: 10px;
+    margin-left: 5%;
+    border: outset;
+    font-weight: bolder
+}
+
+#submit:active, #reset:active {
+    border: inset;
+    font-weight: normal;
+}
+
+.icons {
+    border: 3px outset #999999;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.icons:visited {
+    border: 3px outset #999999;
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.icons:hover {
+    border: 3px inset #999999;
+    width: 50px;
+    height: 50px;
+}
+
+.icons:active {
+    border: 3px inset #4c4c4c;
+    width: 50px;
+    height: 50px;
+}
+
+#footer {
+    width: 100%;
+    border-top: 1px solid black;
+    margin: auto;
+}
