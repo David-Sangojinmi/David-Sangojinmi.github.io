@@ -72,7 +72,7 @@ footer, header, nav, section {
 }
 
 .main-nav {
-    margin-top: 32px;
+    margin-top: 52px;
     width: 66.6665%;
     float: right;
     padding-right: 20px;
@@ -111,10 +111,17 @@ nav li {
 li {
     display: list-item;
     text-align: -webkit-match-parent;
+    color: #f00;
 }
 
 li a:hover {
-    color: #c10000;
+    color: orangered;
+    background-color: #212121;
+    -webkit-box-shadow: outset 0 1px 0 rgba(255,255,255,0.5), 0 1px 5px rgba(0,0,0,0.5);
+    -moz-box-shadow: outset 0 1px 0 rgba(255,255,255,0.5),0 1px 5px rgba(0,0,0,0.5);
+    box-shadow: outset 0 1px 0 rgba(255,255,255,0.5), 0 1px 5px rgba(0,0,0,0.5);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.3);
+    
 }
 
 .main-nav li.current a {
