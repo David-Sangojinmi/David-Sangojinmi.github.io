@@ -156,6 +156,15 @@ a {
     -o-transition: all 0.25s;
     transition: all 0.25s;
 }
+
+a:hover {
+    color: orangered;
+    text-decoration: none;
+    -webkit-transition: all 0.25s;
+    -moz-transition: all 0.25s;
+    -o-transition: all 0.25s;
+    transition: all 0.25s;
+}
 /* */
 .intro {
     display: block;
@@ -180,8 +189,6 @@ p {
     font-weight: 300;
     padding-top: 10px;
 }
-
-
 /* */
 footer {
     background-color: #212121;
