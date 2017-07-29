@@ -55,13 +55,14 @@ footer, header, nav, section {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 568px)
-.grid:not(.no-stacking-on-mobiles)>.unit {
-    width: 100% !important;
-    padding-left: 20px;
-    padding-right: 20px;
+@media screen and (max-width: 568px) {
+    .grid:not(.no-stacking-on-mobiles)>.unit {
+        width: 100% !important;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
-
+    
 .logo {
     width: ;
     display: inline-block;
@@ -78,9 +79,10 @@ footer, header, nav, section {
     padding-right: 20px;
 }
 
-@media (max-width: 768px)
-.main-nav, ul {
-    text-align: right;
+@media (max-width: 768px){
+    .main-nav, ul {
+        text-align: right;
+    }
 }
 
 nav, ul {
@@ -170,11 +172,12 @@ a:hover {
     display: block;
 }
 
-@media (min-width: 569px)
-.intro, p {
-    font-size: 3.2em;
+@media (min-width: 569px){
+    .intro, p {
+        font-size: 3.2em;
+    }
 }
-
+    
 .intro p {
     line-height: 1em;
     margin: 0;
@@ -228,4 +231,46 @@ footer {
 .links {
     margin: auto;
     width: 80%;
+}
+/* */
+@media only screen and (max-width: 426px) {
+    .logo, nav {
+        width: 100%;
+        float: left;
+        clear: both;
+        color: black;
+    }
+    
+    /*.logo {
+        min-width: 310px;
+        max-width: 415px;
+    }
+    
+    .headerlogo {
+        min-width: 300px;
+        max-width: 400px;
+    }*/
+    
+    li {
+        display: inline-block;
+    }
+    
+    .main-nav {
+        margin: auto;
+        width: 95;;
+        padding-left: 0px;
+        
+    }
+}
+
+@media only screen and (max-width: 426px) {
+    .logo {
+        width: 362.5px;
+        margin: auto;
+    }
+    
+    .headerlogo {
+        width: 350px;
+        margin: auto;
+    }
 }
