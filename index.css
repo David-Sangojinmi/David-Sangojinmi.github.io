@@ -54,14 +54,6 @@ footer, header, nav, section {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-@media screen and (max-width: 568px) {
-    .grid:not(.no-stacking-on-mobiles)>.unit {
-        width: 100% !important;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-}
     
 .logo {
     width: ;
@@ -78,13 +70,7 @@ footer, header, nav, section {
     float: right;
     padding-right: 20px;
 }
-/* --- cont
-@media (max-width: 768px){
-    .main-nav, ul {
-        text-align: right;
-    }
-}
-*/
+
 nav, ul {
     padding: 0;
     margin: 0;
@@ -171,13 +157,7 @@ a:hover {
 .intro {
     display: block;
 }
-/* --- cont
-@media (max-width: 569px){
-    .intro, p {
-        font-size: 3.2em;
-    }
-}
-*/    
+
 .intro p {
     line-height: 1em;
     margin: 0;
@@ -232,45 +212,49 @@ footer {
     margin: auto;
     width: 80%;
 }
-/* */
-@media only screen and (max-width: 426px) {
-    .logo, nav {
+/* - Media Queries - */
+@media screen and (max-width: 500px) {
+    .grid {
         width: 100%;
-        float: left;
         clear: both;
+        float: left;
     }
     
-    /*.logo {
-        min-width: 310px;
-        max-width: 415px;
+    div.logo {
+        width: 100%;
+        clear: both;
+        float: left;
     }
     
-    .headerlogo {
-        min-width: 300px;
-        max-width: 400px;
-    }*/
+    img.img {
+        width: 95%;
+        margin: auto;
+    }
+    
+    .main-nav unit two-thirds hide-on-mobiles {
+        width: 100%;
+        margin: auto;
+    }
+    
+    ul {
+        width: 95%;
+        margin: auto;
+    }
     
     li {
-        display: inline-block;
+        width: 30%;
         margin: auto;
     }
     
-    .main-nav {
+    div.foot {
+        width: 100%;
         margin: auto;
-        width: 95%;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-}
-
-@media (max-width: 426px) {
-    .logo {
-        width: 362.5px;
-        margin: auto;
+        font-size: 2em;
+        text-align: left;
     }
     
-    .headerlogo {
-        width: 350px;
+    div.footlinks {
+        width: 100%;
         margin: auto;
     }
 }
