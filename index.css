@@ -78,13 +78,13 @@ footer, header, nav, section {
     float: right;
     padding-right: 20px;
 }
-
+/* --- cont
 @media (max-width: 768px){
     .main-nav, ul {
         text-align: right;
     }
 }
-
+*/
 nav, ul {
     padding: 0;
     margin: 0;
@@ -171,13 +171,13 @@ a:hover {
 .intro {
     display: block;
 }
-
-@media (min-width: 569px){
+/* --- cont
+@media (max-width: 569px){
     .intro, p {
         font-size: 3.2em;
     }
 }
-    
+*/    
 .intro p {
     line-height: 1em;
     margin: 0;
@@ -238,7 +238,6 @@ footer {
         width: 100%;
         float: left;
         clear: both;
-        color: black;
     }
     
     /*.logo {
@@ -253,17 +252,18 @@ footer {
     
     li {
         display: inline-block;
+        margin: auto;
     }
     
     .main-nav {
         margin: auto;
-        width: 95;;
-        padding-left: 0px;
-        
+        width: 95%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 
-@media only screen and (max-width: 426px) {
+@media (max-width: 426px) {
     .logo {
         width: 362.5px;
         margin: auto;
