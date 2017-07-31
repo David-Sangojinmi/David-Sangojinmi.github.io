@@ -249,12 +249,16 @@ footer {
     div.foot {
         width: 100%;
         margin: auto;
-        font-size: 2em;
+        font-size: 1.5em;
         text-align: left;
     }
     
     div.footlinks {
         width: 100%;
         margin: auto;
+    }
+    
+    nav {
+        font-size: 1.25em;
     }
 }
