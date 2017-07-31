@@ -213,7 +213,7 @@ footer {
     width: 80%;
 }
 /* - Media Queries - */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 568px) {
     .grid {
         width: 100%;
         clear: both;
