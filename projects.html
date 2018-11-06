@@ -43,34 +43,117 @@
                     <script src="https://github.com/downloads/processing-js/processing-js/processing-1.4.1.min.js"></script>
                     <script type="text/processing" data-processing-target="targetcanvas">
 
-                        int num = 100;
-                        int[] x = new int[num];
-                        int[] y = new int[num];
+                        import peasy.*;
 
-                        void setup() { 
-                          size(500, 500);
-                          background(0);
-                          colorMode(RGB);
-                          rectMode(CENTER);
-                          noStroke();
-                          // fill(255, 102);
+                        float x = 0.01;
+                        float y = 0;
+                        float z = 0;
+
+                        float a = 10;
+                        float b = 28;
+                        float c = 8.0/3.0;
+
+                        ArrayList<PVector> points = new ArrayList<PVector>();
+
+                        PeasyCam cam;
+
+                        void setup() {
+                          size(800, 600, P3D);
+                          colorMode(HSB);
+                          cam = new PeasyCam(this, 500);
                         }
 
                         void draw() {
+                          //----------------------------------------------
+
                           background(0);
-                          // Shift the values to the right
-                          for (int i = num-1; i > 0; i--) {
-                            x[i] = x[i-1];
-                            y[i] = y[i-1];
+                          float dt = 0.01;
+                          float dx = (a * (y - x)) * dt;
+                          float dy = (x * (b - z) - y) * dt;
+                          float dz = (x * y - c * z) * dt;
+                          x = x + dx;
+                          y = y + dy;
+                          z = z + dz;
+
+                          points.add(new PVector(x, y, z));
+
+                          translate(0, 0, -80);
+                          scale(5);
+                          stroke(255);
+                          noFill();
+
+                          float hu = 0;
+
+                          beginShape();
+                          for (PVector v : points) {
+                            stroke(hu, 255, 255);
+                            vertex(v.x, v.y, v.z);
+
+                            /* PVector offset = PVector.random3D();
+                            offset.mult(0.001);
+                            v.add(offset); */
+
+                            hu += 0.1;
+                            if (hu > 255) {
+                              hu = 0;
+                            }
                           }
-                          // Add the new values to the beginning of the array
-                          x[0] = mouseX;
-                          y[0] = mouseY;
-                          // Draw the circles
-                          for (int i = 0; i < num; i++) {
-                            fill(random(0, 255), random(0, 255), random(0, 255));
-                            ellipse(x[i], y[i], i/2.0, i/2.0);
+                          endShape();
+
+                          //---------------------------------------------------------
+
+                          /*
+                          box(300, 300, 300);
+
+                          colorMode(RGB);
+
+                          // Defining the x, y, z points
+                          PVector xp1, xp2, yp1, yp2, zp1, zp2;
+                          xp1 = new PVector(-150, 0, 0);
+                          xp2 = new PVector(150, 0, 0);
+                          yp1 = new PVector(0, -150, 0);
+                          yp2 = new PVector(0, 150, 0);
+                          zp1 = new PVector(0, 0, 150);
+                          zp2 = new PVector(0, 0, -150);
+
+                          //Defining the center
+                          float cpx = 0;
+                          float cpy = 0;
+                          float cpz = 0;
+
+                          // This is the x-axis
+                          stroke(255, 0, 0);
+                          line(-150, 0, 0, 150, 0, 0);
+
+                          // This is the y-axis
+                          stroke(0, 255, 0);
+                          line(0, -150, 0, 0, 150, 0);
+
+                          // This is the z-axis
+                          stroke(0, 0, 255);
+                          line(0, 0, 150, 0, 0, -150);
+
+                          //-----------------------------------------------
+
+                          float x = 0;
+                          float y = 0;
+                          float z = 0;
+
+                          ArrayList<PVector> points = new ArrayList<PVector>();
+                          points.add(new PVector(x, y, z));
+
+                          // A parabola - y=x^2 + mx + c
+                          beginShape();
+                          stroke(255);
+                          for (PVector v : points) {
+                            vertex(x, y, z);
+
+                            PVector offset = PVector.random3D();
+                            offset.mult(0.01);
+                            v.add(offset);
                           }
+                          endShape();
+                        } */
                         }
 
                     </script>
