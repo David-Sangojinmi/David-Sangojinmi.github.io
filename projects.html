@@ -7,36 +7,7 @@
         <title>
             Projects
         </title>
-        <script src="https://github.com/downloads/processing-js/processing-js/processing-1.4.1.min.js"></script>]"
-        <script type="text/processing" data-processing-target="targetcanvas">
         
-            int num = 50;
-            int[] x = new int[num];
-            int[] y = new int[num];
-
-            void setup() { 
-              size(500, 500);
-              noStroke();
-              fill(255, 102);
-            }
-
-            void draw() {
-              background(0);
-              // Shift the values to the right
-              for (int i = num-1; i > 0; i--) {
-                x[i] = x[i-1];
-                y[i] = y[i-1];
-              }
-              // Add the new values to the beginning of the array
-              x[0] = mouseX;
-              y[0] = mouseY;
-              // Draw the circles
-              for (int i = 0; i < num; i++) {
-                ellipse(x[i], y[i], i/2.0, i/2.0);
-              }
-            }
-        
-        </script>
     </head>
     <body>
         <header>
@@ -69,6 +40,56 @@
                     </p>
                 </div>
                 <div>
+                    <script src="https://github.com/downloads/processing-js/processing-js/processing-1.4.1.min.js"></script>
+                    <script type="text/processing" data-processing-target="targetcanvas">
+
+                        int num = 100;
+                        int[] x = new int[num];
+                        int[] y = new int[num];
+
+                        void setup() { 
+                          size(500, 500);
+                          background(0);
+                          colorMode(RGB);
+                          rectMode(CENTER);
+                          noStroke();
+                          // fill(255, 102);
+                        }
+
+                        void draw() {
+                          background(0);
+                          // Shift the values to the right
+                          for (int i = num-1; i > 0; i--) {
+                            x[i] = x[i-1];
+                            y[i] = y[i-1];
+                          }
+                          // Add the new values to the beginning of the array
+                          x[0] = mouseX;
+                          y[0] = mouseY;
+                          // Draw the circles
+                          for (int i = 0; i < num; i++) {
+                            fill(random(0, 255), random(0, 255), random(0, 255));
+                            ellipse(x[i], y[i], i/2.0, i/2.0);
+                          }
+                        }
+
+                    </script>
+                    <canvas id="targetcanvas" width="500" height="500"></canvas>
+                    &nbsp
+                    <script src="https://github.com/downloads/processing-js/processing-js/processing-1.4.1.min.js"></script>
+                    <script type="text/processing" data-processing-target="targetcanvas">
+                        void setup() {
+                            size(500, 500);
+                            background(0);
+                        }
+                        
+                        void draw() {
+                            noStroke();
+                            fill(255, 0, 0);
+                            rect(100, 100, 100, 100);
+                            
+                        }
+                    </script>
                     <canvas id="targetcanvas" width="500" height="500"></canvas>
                 </div>
             </div>
