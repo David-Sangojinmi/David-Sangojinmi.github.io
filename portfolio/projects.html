@@ -4,20 +4,20 @@
         <link rel="stylesheet" type="text/css" href="index.css" />
         <meta content="Projects">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic,900%22" />
-        <link rel="apple-touch-icon" sizes="57x57" href="/portfolio/apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="/portfolio/apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="/portfolio/apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="/portfolio/apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="/portfolio/apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="/portfolio/apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="/portfolio/apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="/portfolio/apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="/portfolio/apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="/portfolio/android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/portfolio/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="/portfolio/favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/portfolio/favicon-16x16.png">
-        <link rel="manifest" href="/portfolio/manifest.json">
+        <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="manifest.json">
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
@@ -29,8 +29,8 @@
         <header>
             <div class="grid">
                 <div class="logo">
-                    <a href="">
-                        <img src="DS.png" width="250" height="" alt="David Sangojinmi">
+                    <a href="projects.html.html">
+                        <img src="DS.png" width="250" height="140" alt="David Sangojinmi">
                     </a>
                 </div>
                 <nav class="main-nav unit two-thirds hide-on-mobiles">
@@ -59,35 +59,56 @@
                     <script src="https://github.com/downloads/processing-js/processing-js/processing-1.4.1.min.js"></script>
                     <script type="text/processing" data-processing-target="targetcanvas">
 
-                        int num = 100;
-                        int[] x = new int[num];
-                        int[] y = new int[num];
+                    Spot[] spots; // Declare array
+                    void setup() {
+                    size(700, 500);
+                    int numSpots = 200; // Number of objects
+                    int dia = width/numSpots; // Calculate diameter
+                    spots = new Spot[numSpots]; // Create array
+                    for (int i = 0; i < spots.length; i++) {
+                    float x = dia/2 + i*dia;
+                    float rate = random(0.8, 2);
+                    // Create each object
+                    spots[i] = new Spot(x, 50, dia, rate);
+                    }
+                    noStroke();
+                    colorMode(RGB);
+                    }
+                    void draw() {
+                    fill(0, 12);
+                    rect(0, 0, width, height);
+                    fill(0, 255, 0, random(1, 255));
+                    for (int i=0; i < spots.length; i++) {
+                    spots[i].move(); // Move each object
+                    spots[i].display(); // Display each object
+                    }
+                    }
+                    class Spot {
+                    float x, y;         // X-coordinate, y-coordinate
+                    float diameter;     // Diameter of the circle
+                    float speed;        // Distance moved each frame
+                    int direction = 1;  // Direction of motion (1 is down, -1 is up)
 
-                        void setup() {
-                          size(500, 500);
-                          background(0);
-                          colorMode(RGB);
-                          rectMode(CENTER);
-                          noStroke();
-                          // fill(255, 102);
-                        }
+                    // Constructor
+                    Spot(float xpos, float ypos, float dia, float sp) {
+                    x = xpos;
+                    y = ypos;
+                    diameter = dia;
+                    speed = sp;
+                    }
 
-                        void draw() {
-                          background(0);
-                          // Shift the values to the right
-                          for (int i = num-1; i > 0; i--) {
-                            x[i] = x[i-1];
-                            y[i] = y[i-1];
-                          }
-                          // Add the new values to the beginning of the array
-                          x[0] = mouseX;
-                          y[0] = mouseY;
-                          // Draw the circles
-                          for (int i = 0; i < num; i++) {
-                            fill(random(0, 255), random(0, 255), random(0, 255));
-                            rect(x[i], y[i], i/2.0, i/2.0);
-                          }
-                        }
+                    void move() {
+                    y += (speed * direction);
+                    if ((y > (height - diameter/2)) || (y < diameter/2)) {
+                      // direction *= -1;
+                      y = 50;
+                    }
+                    }
+
+                    void display() {
+                    ellipse(x, y, diameter, diameter);
+                    }
+                    }
 
                     </script>
                     <canvas id="targetcanvas" width="500" height="500"></canvas>
