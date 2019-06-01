@@ -9,7 +9,7 @@ void setup() {
     float x = dia/2 + i*dia;
     float rate = random(0.8, 2);
     // Create each object
-    spots[i] = new Spot(x, 0, dia, rate);
+    spots[i] = new Spot(x, 5, dia, rate);
   }
   noStroke();
   colorMode(RGB);
@@ -45,7 +45,7 @@ class Spot {
     y += (speed * direction);
     if ((y > (height - diameter/2)) || (y < diameter/2)) {
       // direction *= -1;
-      y = 0;
+      y = 5;
     }
   }
 
