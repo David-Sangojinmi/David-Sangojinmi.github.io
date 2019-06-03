@@ -1,8 +1,8 @@
 Spot[] spots; // Declare array
 
 void setup() {
-  size(1200, 600);
-  int numSpots = 300; // Number of objects
+  size(900, 600);
+  int numSpots = 225; // Number of objects
   int dia = width/numSpots; // Calculate diameter
   spots = new Spot[numSpots]; // Create array
   for (int i = 0; i < spots.length; i++) {
