@@ -114,9 +114,7 @@ class Droplet {
     noStroke();
     noFill();
   }
-
 }
-
 // Rain dropping down class --------------------------------
 class Dropdown {
   float x = random(width);
@@ -147,7 +145,6 @@ class Dropdown {
     noFill();
   }
 }
-
 // Rain dropping right class -------------------------------
 class Dropright {
   float x = random(1300, 850);
@@ -177,9 +174,7 @@ class Dropright {
     noStroke();
     noFill();
   }
-
 }
-
 // Rain dropping left class --------------------------------
 class Dropleft {
   float x = random(-500, -50);
@@ -209,6 +204,5 @@ class Dropleft {
     noStroke();
     noFill();
   }
-
 }
 // --------------------------------------------------------
