@@ -1,3 +1,3 @@
-# test_portfolio
+#Personal Portfolio
 
-Once this portfolio is complete, it will be deployed at david-sangojinmi.github.io 
+Hosted at: https://david-sangojinmi.github.io/
