@@ -1,3 +1,3 @@
-#Personal Portfolio
+## Personal Portfolio
 
-Hosted at: https://david-sangojinmi.github.io/
+Hosted at: https://david-sangojinmi.github.io/ thanks to GitHub Pages.
