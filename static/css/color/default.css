@@ -1,9 +1,9 @@
 ::selection {
-  background-color:#09c3b3;
+  background-color:#f14141;
   color: #fff;
 }
 ::-moz-selection {
-  background-color:#09c3b3;
+  background-color:#f14141;
   color: #fff;
 }
 
@@ -11,15 +11,15 @@
 header .k-navbar-nav li a.active,
 header .k-navbar-nav li a:hover,
 .theme-color {
-  color:#09c3b3;
+  color:#f14141;
 }
 
 .theme-border {
-	border-color: #09c3b3;
+	border-color: #f14141;
 }
 
 .m-btn,
 .theme-after:after,
 .theme-bg {
-  background: #09c3b3;
+  background: #f14141;
 }
