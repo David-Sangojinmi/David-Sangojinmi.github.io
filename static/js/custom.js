@@ -218,9 +218,9 @@ Copyright (c) 2018 - mital_04
             speed: 200,
             loop:true,
             strings: [
-              'Machine Learning Developer',
-			  'Life Long Learner',
-              'TKS Innovator'
+              'Machine Learning Enthusiast',
+			        'Passionate about Technology',
+              'Always Learning'
             ],
             breakLines: false
         }); 

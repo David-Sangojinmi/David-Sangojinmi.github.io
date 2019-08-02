@@ -68,7 +68,7 @@ Table of contents
   height: 50px;
   border-radius: 50%;
   border: 10px solid #e8e8e8;
-  border-top: 10px solid #292929;
+  border-top: 10px solid #f14141;
   -webkit-animation: rotate 1.2s infinite linear;
   animation: rotate 1.2s infinite linear;
   overflow: hidden;
