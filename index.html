@@ -1,133 +1,602 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <link rel="stylesheet" type="text/css" href="/portfolio/index.css" />
-        <meta content="Homepage">
-        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic,900%22" />
-        <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
-        <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
-        <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
-        <link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
-        <link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
-        <link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
-        <link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
-        <link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-        <link rel="manifest" href="manifest.json">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-        <meta name="theme-color" content="#ffffff">
-        <title>
-            David Sangojinmi
-        </title>
-    </head>
-    <body>
-        <header>
-            <div class="grid">
-                <div class="logo">
-                  <a href="index.html">
-                      <img src="DS.png" width="250" height="140" alt="David Sangojinmi">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>David Sangojinmi</title>
+
+  <link href="static/plugin/font-awesome/css/fontawesome-all.min.css" rel="stylesheet">
+  <link href="static/plugin/themify-icons/themify-icons.css" rel="stylesheet">
+
+  <link href="static/plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/plugin/owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/plugin/magnific/magnific-popup.css" rel="stylesheet">
+
+  <link href="static/css/styles.css" rel="stylesheet">
+  <link href="static/css/color/default.css" rel="stylesheet" id="color_theme">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico" />
+</head>
+
+<body data-spy="scroll" data-target="#navbarKeira" data-offset="98">
+
+  <div id="loading">
+    <div class="load-circle"><span class="one"></span></div>
+  </div>
+
+  <header>
+    <nav class="navbar header-nav-01 fixed-top navbar-expand-lg">
+      <div class="container">
+
+        <a class="navbar-brand" href="#">David <span class="theme-bg"></span></a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarKeira" aria-controls="navbarKeira" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarKeira">
+          <ul class="navbar-nav ml-auto">
+            <li><a class="nav-link active" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#aboutus">About Me</a></li>
+            <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li><a class="nav-link" href="#blog">Newsletters</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+	<img src="static/img/profile.jpg" style="display: none" alt="">
+
+  <main>
+    <section id="home" class="home-banner-01 bg-no-repeat bg-cover bg-fixed home-bg" style="background-image: url(static/img/background.jpg);">
+      <div id="particles-box"></div>
+      <div class="container">
+        <div class="row full-screen align-items-center">
+          <div class="col-12 col-md-12 text-center">
+            <div class="home-text">
+              <h5 class="font-alt">David Sangojinmi</h5>
+              <p><span id="type-it"></span></p>
+              <div class="btn-bar">
+                <a href="#aboutus" class="m-btn m-btn-theme m-btn-h-white">About Me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="aboutus" class="section gray-bg">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-12 col-lg-5">
+    				<div class="about-img bg-no-repeat bg-cover" style="background-image: url(static/img/profile.jpg);">
+    				</div>
+    			</div>
+    			<div class="col-md-12 col-lg-7">
+    				<div class="about-box">
+	    				<div class="about-me">
+	    					<h6>Hello & Welcome</h6>
+	    					<h2>A Bit <span class="theme-color">About Me</span></h2>
+	    					<p>I'm a 15 year-old student from Toronto, Ontario. I've always been interested in finding solutions to different kinds of problems. Recently, I've been learning about artificial intelligence and neural nets and I'm super passionate about using deep learning to make a difference in the world!</p>
+	    					<p>
+	    					I'm working on developing projects that leverage machine learning to tackle real world concepts. Right now, I'm exploring the applications of Convolutional Neural Networks and Recurrent Neural Networks in Computer Vision and Natural Language Processing and I hope you join in on my journey!
+	    					</p>
+	    				</div>
+	    				<div class="row">
+	    					<div class="col-md-6">
+	    						<div class="feature-box">
+	    							<i class="icon theme-bg ti-desktop"></i>
+	    							<div class="feature-content">
+	    								<h5>Machine Learning</h5>
+	    								<p>Python and R for data science projects.</p>
+	    							</div>
+	    						</div>
+	    					</div>
+	    					<div class="col-md-6">
+	    						<div class="feature-box">
+	    							<i class="icon theme-bg ti-ruler-pencil"></i>
+	    							<div class="feature-content">
+	    								<h5>Digital Content</h5>
+	    								<p>Adobe Photoshop and Premiere Pro for editing.</p>
+	    							</div>
+	    						</div>
+	    					</div>
+							<div class="col-md-6">
+	    						<div class="feature-box">
+	    							<i class="icon theme-bg ti-mouse"></i>
+	    							<div class="feature-content">
+	    								<h5>Game Development</h5>
+	    								<p>Experience with Unity Engine for VR development.</p>
+	    							</div>
+	    						</div>
+	    					</div>
+							<div class="col-md-6">
+	    						<div class="feature-box">
+	    							<i class="icon theme-bg ti-server"></i>
+	    							<div class="feature-content">
+	    								<h5>Web Design</h5>
+	    								<p>HTML, CSS, and JS for web pages and applications.</p>
+	    							</div>
+	    						</div>
+	    					</div>
+	    			    </div>
+	    				<div class="btn-bar">
+	            			<a href="#portfolio" class="m-btn m-btn-theme">My Portfolio</a>
+	          			</div>
+          			</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section id="portfolio" class="counter-section bg-center-center bg-cover bg-fixed home-bg" style="background-image: url(static/img/background2.jpg);">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title-01">
+              <span class="font-alt">THE PROJECTS I'VE BEEN WORKING ON</span>
+              <h3 class="font-alt">My Portfolio</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="portfolio-filter m-30px-b">
+          <ul class="filter">
+            <li class="active" data-filter="*">All</li>
+            <li data-filter=".article">Articles</li>
+            <li data-filter=".project">Projects</li>
+            <li data-filter=".video">Videos</li>
+          </ul>
+        </div>
+
+        <div class="portfolio-content">
+          <ul class="portfolio-cols portfolio-cols-3">
+
+            <li class="portfolio-item project">
+                    <div class="portfolio-col portfolio-hover-01">
+                      <div class="portfolio-img">
+                        <a href="#">
+                          <img src="static/img/posenet.png" title="" alt="">
+                        </a>
+                        <div class="hover">
+                            <div class="action-btn">
+                              <a href="projects/Pose-Estimation/demos/camera.html" class="theme-color">
+                                <i class="fa fa-link"></i>
+                              </a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="portfolio-info">
+                        <h5>PoseNet Camera Feed Demo</h5>
+                        <span>An implementation in TensorFlow.js for real-time inference using data from the webcam to detect pose.</span>
+                      </div>
+                    </div>
+                  </li>
+
+            <li class="portfolio-item article video">
+                    <div class="portfolio-col portfolio-hover-01">
+                      <div class="portfolio-img">
+                        <a href="#">
+                          <img src="static/img/piano.jpg" title="" alt="">
+                        </a>
+                        <div class="hover">
+                            <div class="action-btn">
+                              <a href="https://www.youtube.com/watch?v=qNCCvDs85bY" class="popup-video theme-color"><i class="fa fa-play"></i></a>
+      						            <a href="https://towardsdatascience.com/generating-music-with-artificial-intelligence-9ce3c9eef806?source=email-c29545804005--writer.postDistributed&sk=e91b2a09bd0f9d8d5bd77e2c029229af" class="theme-color">
+                                <i class="fab fa-medium-m"></i>
+                              </a>
+                              <a href="#" class="theme-color">
+                                <i class="fab fa-linkedin-in"></i>
+                              </a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="portfolio-info">
+                        <h5>Generating Music With Artificial Intelligence</h5>
+                        <span>What I learned from doing research on music generation with machine learning.</span>
+                      </div>
+                    </div>
+                  </li>
+
+            <li class="portfolio-item article">
+                    <div class="portfolio-col portfolio-hover-01">
+                      <div class="portfolio-img">
+                        <a href="#">
+                          <img src="static/img/books.jpg" title="" alt="">
+                        </a>
+                        <div class="hover">
+                            <div class="action-btn">
+      						            <a href="https://towardsdatascience.com/getting-a-machine-to-do-my-english-homework-for-me-5d339470fe42" class="theme-color">
+                                <i class="fab fa-medium-m"></i>
+                              </a>
+                              <a href="https://www.linkedin.com/pulse/getting-machine-do-my-english-homework-me-alex-yu/" class="theme-color">
+                                <i class="fab fa-linkedin-in"></i>
+                              </a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="portfolio-info">
+                        <h5>Getting A Machine To Do My English Homework For Me</h5>
+                        <span>A high-level overview of Recurrent Neural Networks and Long Short Term Memory cells and how they can be used to write essays.</span>
+                      </div>
+                    </div>
+                  </li>
+
+            <li class="portfolio-item project">
+                    <div class="portfolio-col portfolio-hover-01">
+                      <div class="portfolio-img">
+                        <a href="#">
+                          <img src="static/img/nietzsche.jpg" title="" alt="">
+                        </a>
+                        <div class="hover">
+                            <div class="action-btn">
+      						<a href="https://github.com/uyxela/lstm-keras/" class="theme-color">
+                                <i class="fab fa-github"></i>
+                              </a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="portfolio-info">
+                        <h5>LSTM Nietzsche Text Generation</h5>
+                        <span>Using RNNs and LSTMs that were trained on a corpus of writings by Nietzsche to sample and generate completely new sequences of text.</span>
+                      </div>
+                    </div>
+                  </li>
+
+            <li class="portfolio-item article video">
+                    <div class="portfolio-col portfolio-hover-01">
+                      <div class="portfolio-img">
+                        <a href="#">
+                          <img src="static/img/starrynight.jpg" title="" alt="">
+                        </a>
+                        <div class="hover">
+                            <div class="action-btn">
+                              <a href="https://www.youtube.com/watch?v=mylhOkpfrWQ" class="popup-video theme-color"><i class="fa fa-play"></i></a>
+      						            <a href="https://medium.com/@alexjy/using-neural-networks-to-create-paintings-ee76ddb3fff6" class="theme-color">
+                                <i class="fab fa-medium-m"></i>
+                              </a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="portfolio-info">
+                        <h5>Using Neural Networks To Create Paintings</h5>
+                        <span>An overview of style transfer and methods for real-time inference on mobile devices.</span>
+                      </div>
+                    </div>
+                  </li>
+
+            <li class="portfolio-item article">
+                    <div class="portfolio-col portfolio-hover-01">
+                      <div class="portfolio-img">
+                        <a href="#">
+                          <img src="static/img/mountain.jpg" title="" alt="">
+                        </a>
+                        <div class="hover">
+                            <div class="action-btn">
+      						<a href="https://medium.com/@alexjy/why-failure-is-essential-for-personal-growth-7d5afeee3a57" class="theme-color">
+                                <i class="fab fa-medium-m"></i>
+                              </a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="portfolio-info">
+                        <h5>Why Failure Is Essential For Personal Growth</h5>
+                        <span>Some of my key takeaways on adapting to failure from Ray Dalio’s Principles</span>
+                      </div>
+                    </div>
+                  </li>
+
+            <li class="portfolio-item project video article">
+              <div class="portfolio-col portfolio-hover-01">
+                <div class="portfolio-img">
+                  <a href="#">
+                    <img src="static/img/skin.jpg" title="" alt="">
                   </a>
+                  <div class="hover">
+                      <div class="action-btn">
+                        <a class="popup-video theme-color"><i class="fa fa-play"></i></a>
+						            <a class="theme-color" href="https://towardsdatascience.com/building-a-skin-lesion-classification-web-app-16fd2c422b9d">
+						              <i class="fab fa-medium-m"></i>
+						            </a>
+                        <a class="theme-color" href="https://www.linkedin.com/pulse/building-skin-lesion-classification-web-app-alex-yu/">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="theme-color" href="https://github.com/uyxela/Skin-Lesion-Classifier">
+                          <i class="fab fa-github"></i>
+                        </a>
+                        <a href="projects/Skin-Lesion-Classifier/" class="theme-color">
+                          <i class="fa fa-link"></i>
+                        </a>
+                      </div>
+                  </div>
                 </div>
-                <nav class="main-nav unit two-thirds hide-on-mobiles">
-                    <ul>
-                        <li class="current">
-                            <a href="index.html">HOME</a>
-                        </li>
-                        <li>
-                            <a href="projects.html">PROJECTS</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">CONTACT ME</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <section class="intro">
-            <div class="grid">
-                <div>
-                    <p class="first">
-                        Hi! Welcome to the personal&nbsp;website of&nbsp;David Sangojinmi.
-                    </p>
+
+                <div class="portfolio-info">
+                  <h5>Skin Lesion Classifier</h5>
+                  <span>A model trained to classify seven different types of skin cancers.</span>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="grid">
-                <div>
-                    <h2>Who?</h2>
-                    <p>
-                        My name is David Sangojinmi. I am a young aspiring developer. Since a very young age I have always been interested in IT, computing and technology as well as how the things we see around us really work. This interest has only grown and when I was 13 I decided I would start learning programming languages and how things work.
-                        <br><br>
-                        As of now I have learnt and am able to program in HTML and CSS. You can find some of my projects on another page in the website. The languages I am currently learning are: Python, Java and PHP. In addition I am learning how to create responsive websites and use command line programs.
-                    </p>
+              </div>
+            </li>
+
+            <li class="portfolio-item project">
+              <div class="portfolio-col portfolio-hover-01">
+                <div class="portfolio-img">
+                  <a href="#">
+                    <img src="static/img/walmart.jpg" title="" alt="">
+                  </a>
+                  <div class="hover">
+                      <div class="action-btn">
+                        <a href="static/files/walmart.pdf" class="popup-video theme-color"><i class="fas fa-expand"></i></a>
+                      </div>
+                  </div>
                 </div>
-                <div>
-                    <h2>What?</h2>
-                    <p>
-                        This website is both a personal website for me, and a hub. If you search up the meaning of the word "hub" on Google, you will find two main definitions. the first is:
-                        <br><br>&nbsp;<b style="color: #f00">1</b>&nbsp; the central part of a wheel, rotating on or with the axle, and from which the spokes radiate
-                        <br><br>&nbsp;<b style="color: #f00">2</b>&nbsp; the effective centre of an activity, region, or network
-                        <br><br>The one that applies to this website is the second one, the effective centre of an activity, region, or network. I intend for this website to be a centre, a core for my prgramming experience. Whilst I am learning languages such as Java or Python I make little projects. I'm sure many other programmers do this as well. They help develop the previous knowledge gained and are a good way to test understanding of specific parts or general parts of the languages being learnt. If these projects are successful I will upload them to the projects part of the website for me to reflect upon them and anyone who visits my website to see. This is a more useful alternative to just creating projects and never uploading them to any platform.
-                    </p>
+
+                <div class="portfolio-info">
+                  <h5>Walmart Recommendations</h5>
+                  <span>Suggestions to help Walmart Canada improve its customer experience while maintaining a low-cost operating model.</span>
                 </div>
-                <div>
-                    <h2>Why?</h2>
-                    <p>
-                        I created this website to test and showcase my skills with the programming languages HTML and CSS. I have made small projects before but I decided making a website that is hosted online would be a good way to test my skills. Due to the website being online and live there are certain standards I must take into consideration such as Alt data and Meta Tags. Things like colour contrasts and making sure you have good code. All these things are important when you are creating something other people may possibly use and not just small scale projects for fun.
-                    </p>
+              </div>
+            </li>
+
+			<li class="portfolio-item project">
+              <div class="portfolio-col portfolio-hover-01">
+                <div class="portfolio-img">
+                  <a href="#">
+                    <img src="static/img/titanic.jpg" title="" alt="">
+                  </a>
+                  <div class="hover">
+                      <div class="action-btn">
+						<a href="https://github.com/uyxela/Titanic-Survival-Classifier" class="theme-color">
+                          <i class="fab fa-github"></i>
+                        </a>
+                      </div>
+                  </div>
                 </div>
-                <div>
-                    <h2>How?</h2>
-                    <p>
-                        As mentioned before this website was created using HTML and CSS. Those are the programming languages used for the programming part of building this website. This website is hosted using &nbsp;<a class="plink" href="https://github.com">Github Pages</a>&nbsp;, this is a free way to host your work and projects online. Other hosting services are good however if you do not want to pay to host your work, or can't then Github Pages is very useful. Due to their service being free there may be certain restrictions or limitations however it is still a good way to start.
-                        <br><br>
-                        Text editors and compilers are very useful when coding. They allow you to write, change, edit and save code. There are many text editors out there but the ones that I prefer are:
-                        <br><br>- <a class="plink" href="https://www.sublimetext.com/">Sublime Text</a>
-                        <br><br>- <a class="plink" href="https://atom.io">Atom.io</a>
-                        <br><br>- <a class="plink" href="http://brackets.io/">Brackets</a>
-                        <br><br>
-                        All of these text editors have specific features which make them very useful and stand out.
-                    </p>
+
+                <div class="portfolio-info">
+                  <h5>Titanic Survival Classifier</h5>
+                  <span>A logistic regression model used to predict the likelihood of a person surviving the sinking of the Titanic.</span>
                 </div>
-            </div>
-        </section>
-        <footer>
-            <div class="grid">
-                <div class="foot">
-                    <div class="divfoot">
-                        <p>
-                            The contents of this website are
-                            <br>
-                            &nbsp;property of David Sangojinmi
-                        </p>
+              </div>
+            </li>
+
+			<li class="portfolio-item article">
+              <div class="portfolio-col portfolio-hover-01">
+                <div class="portfolio-img">
+                  <a href="#">
+                    <img src="static/img/eye.jpg" title="" alt="">
+                  </a>
+                  <div class="hover">
+                      <div class="action-btn">
+						<a href="https://towardsdatascience.com/how-to-teach-a-computer-to-see-with-convolutional-neural-networks-96c120827cd1" class="theme-color">
+                          <i class="fab fa-medium-m"></i>
+                        </a>
+						  <a href="https://www.linkedin.com/pulse/how-teach-computer-see-convolutional-neural-networks-alex-yu/" class="theme-color">
+                          <i class="fab fa-linkedin-in"></i>
+                        </a>
+                      </div>
+                  </div>
+                </div>
+
+                <div class="portfolio-info">
+                  <h5>How To Teach A Computer To See With Convolutional Neural Networks</h5>
+                  <span>An article I wrote on how CNNs work, some real-world applications, and how to code one in Python.</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="portfolio-item project">
+                    <div class="portfolio-col portfolio-hover-01">
+                      <div class="portfolio-img">
+                        <a href="#">
+                          <img src="static/img/cnn.png" title="" alt="">
+                        </a>
+                        <div class="hover">
+                            <div class="action-btn">
+      						<a href="https://github.com/uyxela/mnist-keras" class="theme-color">
+                                <i class="fab fa-github"></i>
+                              </a>
+                            </div>
+                        </div>
+                      </div>
+
+                      <div class="portfolio-info">
+                        <h5>MNIST Convolutional Neural Network</h5>
+                        <span>The code for a CNN written in Keras that is trained on the MNIST dataset, a collection of 70,000 28x28 images of handwritten digits. The model achieves an accuracy of approximately 98 to 99 percent.</span>
+                      </div>
                     </div>
-                </div>
-                <div class="footlinks">
-                    <div class="links">
-                        <a href="https://www.linkedin.com/">
-                            <img src="linkedin.png" width="50px" height="50px" alt="David Sangojinmi | LinkedIn">
-                        </a>
-                        <a href="https://www.facebook.com/">
-                            <img src="facebook.png" width="50px" height="50px" alt="David Sangojinmi | Facebook">
-                        </a>
-                        <a href="https://twitter.com/">
-                            <img src="twitter.png" width="50px" height="50px" alt="David Sangojinmi | Twiiter">
-                        </a>
-                        <a href="https://www.instagram.com/">
-                            <img src="instagram.png" width="50px" height="50px" alt="David Sangojinmi | Instagram">
-                        </a>
-                        <a href="mailto:dsangojinmi26@gmail.com">
-                            <img src="mail.png" width="50px" height="50px" alt="David Sangojinmi | Email">
-                        </a>
-                    </div>
-                </div>
+                  </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Blog Start -->
+   <section id="blog" class="section blog-section gray-bg">
+     <div class="container">
+
+       <div class="row">
+     <div class="col-md-8 col-lg-6">
+       <div class="section-title">
+         <label class="theme-after">Progress</label>
+         <h2>Monthly <span class="theme-color">Newsletters</span></h2>
+         <p>Updates sent out every month that highlight what I've been working on, where I've been, and the content that I've been enjoying!</p>
+       </div>
+     </div>
+   </div>
+
+       <div class="row">
+
+         <div class="col-12 col-md-6 col-lg-4">
+           <div class="blog-item">
+             <div class="blog-img">
+               <a href="#">
+                 <img src="static/img/bioprinting.jpg" title="" alt="">
+               </a>
+               </div>
+               <div class="blog-content">
+
+                 <h4 class="font-alt"><a href="#">February Newsletter</a></h4>
+                 <p>I researched bioprinting, many different applications of Recurrent Neural Networks, went to hackathons, and more!</p>
+                 <a class="theme-bg more" href="https://preview.mailerlite.com/p5i5p1">Read More</a>
+               </div><!-- /blog-content -->
+           </div> <!-- Blog Item -->
+         </div>
+
+         <div class="col-12 col-md-6 col-lg-4">
+           <div class="blog-item">
+             <div class="blog-img">
+               <a href="#">
+                 <img src="static/img/style.png" title="" alt="">
+               </a>
+               </div>
+               <div class="blog-content">
+
+                 <h4 class="font-alt"><a href="#">January Newsletter</a></h4>
+                 <p>I gave a presentation about neural style transfer, wrote an article on personal growth, and attended tech events and hackathons.</p>
+                 <a class="theme-bg more" href="https://preview.mailerlite.com/b1x2c3">Read More</a>
+               </div><!-- /blog-content -->
+           </div> <!-- Blog Item -->
+         </div>
+
+         <div class="col-12 col-md-12 col-lg-4">
+           <div class="blog-item">
+             <div class="blog-img">
+               <a href="#">
+                 <img src="static/img/google.png" title="" alt="">
+               </a>
+               </div>
+               <div class="blog-content">
+                 <h4 class="font-alt"><a href="#">December Newsletter</a></h4>
+                 <p>I attended a workshop at Google, worked on a machine learning app to classify skin lesions, and went to several AI conferences.</p>
+                 <a class="theme-bg more" href="https://preview.mailerlite.com/h0u7n6">Read More</a>
+               </div><!-- /blog-content -->
+           </div> <!-- Blog Item -->
+         </div>
+       </div>
+     </div> <!-- container -->
+   </section>
+   <!-- / -->
+
+    <section id="contact" class="section">
+      <div class="container">
+
+        <div class="row">
+			<div class="col-md-8 col-lg-6">
+				<div class="section-title">
+					<label class="theme-after">Get In Touch</label>
+					<h2>Contact <span class="theme-color">Me</span></h2>
+					<p>Feel free to reach out and ask me anything!</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12 col-lg-4">
+				<div class="contact-info">
+					<div class="ci-row">
+						<i class="theme-bg ti-email"></i>
+						<label>Message Me</label>
+            <span>
+              alex@alexyu.ca
+            </span>
+        			</div>
+        			<div class="ci-row">
+        				<i class="theme-bg ti-mobile"></i>
+        				<label>Let's Chat</label>
+                <span>
+                  647 551 8856
+                </span>
+        			</div>
+
+        			<div class="ci-row">
+        				<i class="theme-bg ti-direction"></i>
+        				<label>Where I Am</label>
+                <span>
+                  Toronto, Ontario, Canada
+                </span>
+        			</div>
+        		</div>
+			</div>
+			<div class="col-md-12 col-lg-8">
+        <div class="contact-form">
+                <h2>Join my personal newsletter to stay updated with my journey!</h2>
+                <form action="https://formspree.io/alex@alexyu.ca" method="POST">
+					<div class="row">
+                		<div class="col-md-12">
+                      <div class="form-group">
+                        <input name="Name" placeholder="Name" class="form-control" type="text">
+                        <span class="input-focus-effect"></span>
+                      </div>
+                			<div class="form-group">
+                        <input name="Email" placeholder="Email" class="form-control" type="email">
+                				<span class="input-focus-effect"></span>
+                			</div>
+                		</div>
+                		<div class="col-md-12">
+                			<div class="send">
+                				<button type="submit" class="m-btn m-btn-theme"><i class="fa fa-envelope-o" aria-hidden="true"></i>Sign Up!</button>
+                			</div>
+                    	</div>
+					</div>
+                </form>
             </div>
-        </footer>
-    </body>
+			</div>
+		</div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+      <div class="container">
+          <div class="footer-logo">
+            <span>David Sangojinmi <span></span></span>
+          </div>
+          <ul class="social-icons">
+            <li><a href="https://github.com/uyxela"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/alexjy/"><i class="fab fa-linkedin-in"></i></a></li>
+			  <li><a href="https://medium.com/@alexjy"><i class="fab fa-medium-m"></i></a></li>
+			  <li><a href="https://kaggle.com/uyxela"><i class="fab fa-kaggle"></i></a></li>
+          </ul>
+      </div>
+  </footer>
+
+
+
+  <script src="static/js/jquery-3.2.1.min.js"></script>
+  <script src="static/js/jquery-migrate-3.0.0.min.js"></script>
+
+  <script src="static/plugin/bootstrap/js/popper.min.js"></script>
+  <script src="static/plugin/bootstrap/js/bootstrap.min.js"></script>
+  <script src="static/plugin/owl-carousel/js/owl.carousel.min.js"></script>
+  <script src="static/plugin/typeit-master/typeit.min.js"></script>
+  <script src="static/plugin/isotope/isotope.pkgd.min.js"></script>
+  <script src="static/plugin/magnific/jquery.magnific-popup.min.js"></script>
+  <script src="static/plugin/particles/particles.min.js"></script>
+  <script src="static/plugin/particles/particles-app.js"></script>
+
+  <script src="static/js/custom.js"></script>
+
+</body>
+
 </html>
