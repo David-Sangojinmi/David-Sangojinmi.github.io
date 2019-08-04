@@ -2094,6 +2094,15 @@ div#particles-box {
   }
 }
 
+#contact_us_link a{
+  color: #292929;
+}
+
+#contact_us_link a:hover {
+  text-decoration: underline;
+  text-decoration-color: #f14141;
+}
+
 /*-----------------------------------------
 *  Footer
 -----------------------------------------*/
