@@ -24,7 +24,7 @@ function draw() {
     background(245);
     fill(0);
     noStroke();
-    rect(1, 330, 899, 389);
+    rect(1, 330, 898, 388);
 
     image(img, sprite.x, sprite.y, sprite.width, sprite.height);
     spriteMove();
