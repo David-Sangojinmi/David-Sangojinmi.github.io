@@ -22,16 +22,10 @@ var brd = {
     deaths: 0
 };
 
-let img;
-
-function preload() {
-    img = loagImage('bgbad.jpg');
-}
 function setup() {
     createCanvas(900, 450);
     rectMode(CORNERS);
     ellipseMode(CENTER);
-    image(img, 0, 0, img.width, img.height);
 }
 
 function draw() {
