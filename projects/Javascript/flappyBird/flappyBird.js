@@ -25,7 +25,7 @@ var brd = {
 let img;
 
 function preload() {
-    img = loagImage('bg.jpg');
+    img = loagImage('bgbad.jpg');
 }
 function setup() {
     createCanvas(900, 450);
