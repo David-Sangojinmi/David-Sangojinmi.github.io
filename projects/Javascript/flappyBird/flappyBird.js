@@ -29,7 +29,7 @@ function setup() {
 }
 
 function draw() {
-    //background(39, 201, 204);
+    background(39, 201, 204);
 
     // bg();                      Implement later
     column();
