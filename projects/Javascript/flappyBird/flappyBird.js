@@ -56,8 +56,8 @@ function bird() {
     }
 
     // Scoring
-    if ((brd.x === col1.x2) && (brd.y - 25 > col1.y2 && brd.y + 25 < col2.y1)) {
-        brd.points += 1;             // FIX: no longer gives points
+    if (brd.x === col1.x2 && (brd.y - 25 > col1.y2 || brd.y + 25 < col2.y1)) {
+        brd.points += 1; // FIX: no longer gives points
     }
 }
 
