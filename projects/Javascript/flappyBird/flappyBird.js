@@ -22,15 +22,20 @@ var brd = {
     deaths: 0
 };
 
+let img;
+
+function preload() {
+    img = loagImage('bg.png');
+}
 function setup() {
     createCanvas(900, 450);
     rectMode(CORNERS);
     ellipseMode(CENTER);
-    //background('bg.jpg', 0, 0);
+    image(img, 0, 0, img.width, img.height);
 }
 
 function draw() {
-    background(39, 201, 204);
+    //background(39, 201, 204);
 
     // bg();                      Implement later
     column();
