@@ -19,7 +19,7 @@ let ball = {
     y: 200,
     diameter: 20,
     xspeed: 2,
-    yspeed: 6
+    yspeed: 5
 };
 
 let game = {
