@@ -219,7 +219,7 @@ Copyright (c) 2018 - mital_04
             loop:true,
             strings: [
               'Aspiring Software Developer',
-			        'Passionate about Technology',
+			        'Passionate about technology',
               'Always Learning'
             ],
             breakLines: false
